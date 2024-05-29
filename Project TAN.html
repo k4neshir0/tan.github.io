@@ -1,0 +1,170 @@
+<!DOCTYPE index.html>
+<python -m http.server 8000>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project TAN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: pink,blue;
+            text-align: center;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #1f1f1f;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        main {
+            padding: 15px;
+            color: white;
+            justify-content: center;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+            color: white;
+            justify-content: center;
+        }
+
+        .active-tab {
+            display: block;
+            color: white;
+        }
+
+        .container {
+            display: left;
+            align-items: left; 
+            grid-template-columns: 5fr 5fr 5fr;
+            column-gap: 50px;
+        }
+
+        .img {
+            max-width: 100%;
+            max-height:100%;
+            justify-content: left;
+        }
+
+        .text {
+            font-size: 18px;
+            color: black;
+            text-align: center;
+            justify-content: right;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="./Project TAN_files/95440e226f25ddd82a80904f6550d9ac.jpg" alt="Header Image">
+        <h1>Honkai : Star Rail In-Game SHOP </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li onclick="showTab(&#39;About&#39;)"><a href="file:///C:/Users/Admin/Desktop/html/ProjectTan.html#">About</a></li>
+            <li onclick="showTab(&#39;Items for Sale&#39;)"><a href="file:///C:/Users/Admin/Desktop/html/ProjectTan.html#">Items for Sale</a></li>
+            <li onclick="showTab(&#39;Shipping Information&#39;)"><a href="file:///C:/Users/Admin/Desktop/html/ProjectTan.html#">Shipping Information</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="About" class="tab-content active-tab">
+            <h2>About</h2>
+            <img src="./Project TAN_files/6a37a8618008f483063d30b8ea0e9f43.jpg" alt="Image 1">
+            <p>Welcome to Honkai: Star Rail In-Game SHOP! We are one of the best in-game shops online. We look forward to your puchases! xoxo</p>
+        </div>
+
+        <div id="Items for Sale" class="tab-content">
+            <h2>Items for Sale</h2>
+            <p>Available Pouches for Sale!</p>
+                <img src="./Project TAN_files/c6364bdf5e51628c4df0aa38b2c0dee6c5dc88cafaaaf5c5.png">
+                <h1>60 Oneiric Shard</h1>
+                <p> 50 pesos</p>
+                    <img src="./Project TAN_files/e98a24ca746b98bc06278a1c25b84558e4871af528bf7be0.png">
+                    <h1>300 Oneiric Shard</h1>
+                    <p> 290 pesos </p>
+                        <img src="./Project TAN_files/w500.jpg">
+                        <h1> 980 Oneiric Shard</h1>
+                        <p> 970 pesos </p> 
+                            <img src="./Project TAN_files/w500(1).jpg">
+                            <h1> 3280 Oneiric Shard</h1>
+                            <p> 3270 pesos </p> 
+                                <img src="./Project TAN_files/w500(2).jpg">
+                                <h1> 6480 Oneiric Shard</h1>
+                                <p> 6470 pesos </p> 
+        </div>
+
+        <div id="Shipping Information" class="tab-content"> 
+            <h2>Shipping Information</h2>
+            <p>Input your Shipping Information Here!</p>
+                <h1>Shipping</h1>
+                <p>Name: </p>
+                    <p>Email: </p>
+                        <p>Address: </p>
+                            <p>Contact Number: </p>
+        </div>
+
+    </main>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all tabs
+            var tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(function(tab) {
+                tab.classList.remove('active-tab');
+            });
+
+            // Show the selected tab
+            var selectedTab = document.getElementById(tabId);
+            if (selectedTab) {
+                selectedTab.classList.add('active-tab');
+            }
+        }
+    </script>
+
+    <footer>
+        <p>© 2023 Mel Joshua Tan. All rights reserved.</p>
+    </footer>
+
+
+</body></html>
